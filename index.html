@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marico Bakes and Bites, Coffee and Food | Kathmandu</title>
+    <meta name="description" content="Premium cafe in Mandikhatar, Kathmandu. Freshly baked croissants, cakes, and specialty coffee. Visit Marico Coffee and Food for an exceptional experience.">
+    <meta name="keywords" content="bakery in Kathmandu, natural cakes, healthy food, pizza near me, bakery Mandikhatar, coffee shop, cakes Kathmandu, Marico Bakes and Bites">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <h1>Marico Bakes <span class="logo-accent">&</span> Bites</h1>
+                <p class="tagline">Coffee and Food</p>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- We're Open Badge -->
+    <div class="open-badge" id="openBadge">
+        <span class="badge-dot"></span>
+        <span>Open Now</span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">Where Every Bite Tells a Story</h2>
+            <p class="hero-subtitle">Artisan Coffee & Freshly Baked Goods</p>
+            <p class="hero-tagline">Visit us in Mandikhatar, Kathmandu</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="https://wa.me/977XXXXXXXXX" target="_blank" class="btn btn-secondary">Order Now</a>
+            </div>
+        </div>
+        <div class="quick-info">
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <span>7:00 AM - 9:00 PM</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Mandikhatar, Kathmandu</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>982-8585123</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Action Buttons -->
+    <div class="quick-actions">
+        <a href="tel:9828585123" class="action-btn call">
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+        </a>
+        <a href="https://maps.google.com/?q=P8QX+XGG+Marico+Bakes+And+Bites+Mandikhatar+Kathmandu" target="_blank" class="action-btn directions">
+            <i class="fas fa-directions"></i>
+            <span>Directions</span>
+        </a>
+        <a href="https://instagram.com/maricobakes" target="_blank" class="action-btn message">
+            <i class="fab fa-instagram"></i>
+            <span>Message</span>
+        </a>
+    </div>
+
+    <!-- Featured Items -->
+    <section class="featured">
+        <div class="container">
+            <h2 class="section-title">Our Specialties</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="featured-image" style="background-image: url('images/croissant-classic.jpg');">
+                        <div class="featured-overlay">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                    </div>
+                    <h3>Artisan Croissants</h3>
+                    <p>Buttery, flaky, freshly baked daily</p>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-image" style="background-image: url('images/cheesecake.jpg');">
+                        <div class="featured-overlay">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                    </div>
+                    <h3>Premium Cheesecake</h3>
+                    <p>Creamy, rich, and perfectly crafted</p>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-image" style="background-image: url('images/coffee-1.jpg');">
+                        <div class="featured-overlay">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                    </div>
+                    <h3>Specialty Coffee</h3>
+                    <p>Artisan coffee brewed with care</p>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-image" style="background-image: url('images/cookie.jpg');">
+                        <div class="featured-overlay">
+                            <i class="fas fa-cookie"></i>
+                        </div>
+                    </div>
+                    <h3>Fresh Cookies</h3>
+                    <p>Baked to perfection with love</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="menu-subtitle">Crafted with care in the heart of Kathmandu <span class="nepal-flag">🇳🇵</span></p>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="croissants">
+                    <i class="fas fa-bread-slice"></i> Croissants
+                </button>
+                <button class="category-btn" data-category="cakes">
+                    <i class="fas fa-birthday-cake"></i> Cakes & Bakes
+                </button>
+                <button class="category-btn" data-category="coffee">
+                    <i class="fas fa-mug-hot"></i> Coffee & Tea
+                </button>
+            </div>
+
+            <div class="menu-items">
+                <!-- Croissants Category -->
+                <div class="menu-category active" id="croissants">
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/croissant-classic.jpg');">
+                            <span class="menu-badge">Popular</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Classic Croissant</h3>
+                            <p>Buttery, flaky, golden-brown classic French croissant</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/croissant-almond.jpg');">
+                            <span class="menu-badge">Bestseller</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Almond Croissant</h3>
+                            <p>Classic croissant filled with almond cream and topped with sliced almonds</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/croissant-pistachio.jpg');">
+                            <span class="menu-badge">New</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Pistachio Croissant</h3>
+                            <p>Delicate croissant with rich pistachio cream filling</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cakes & Bakes Category -->
+                <div class="menu-category" id="cakes">
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/cheesecake.jpg');">
+                            <span class="menu-badge">Signature</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Cheesecake</h3>
+                            <p>Creamy, rich cheesecake on a buttery graham crust</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/cookie-chocolate-almond.jpg');">
+                            <span class="menu-badge">Favorite</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Chocolate Almond Cookie</h3>
+                            <p>Rich chocolate cookie studded with crunchy almonds</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/bun-garlic-herb.jpg');">
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Garlic Herb Bun</h3>
+                            <p>Soft, aromatic bun with garlic and fresh herbs</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee & Tea Category -->
+                <div class="menu-category" id="coffee">
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/coffee-cappuccino.jpg');">
+                            <span class="menu-badge">Classic</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Cappuccino</h3>
+                            <p>Espresso with steamed milk and a perfect foam crown</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/coffee-latte.jpg');">
+                            <span class="menu-badge">Popular</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Latte</h3>
+                            <p>Smooth espresso with creamy steamed milk</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image" style="background-image: url('images/tea-masala.jpg');">
+                            <span class="menu-badge">Local</span>
+                        </div>
+                        <div class="menu-item-info">
+                            <h3>Masala Tea</h3>
+                            <p>Traditional spiced tea brewed with aromatic Indian spices</p>
+                            <span class="price">Visit us for our current menu</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Marico Coffee and Food is a premium cafe in the heart of Kathmandu. We serve freshly baked croissants, artisan cakes, and specialty coffee crafted with care. Every detail — from our food to our atmosphere — is designed to make your visit memorable.</p>
+                    <p>Our commitment is simple: use only the finest ingredients to create baked goods and coffee that not only taste incredible but make you feel at home the moment you walk through our doors.</p>
+                    <div class="selling-points">
+                        <div class="point">
+                            <i class="fas fa-leaf"></i>
+                            <span>Premium Ingredients</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                        <div class="point">
+                            <i class="fas fa-star"></i>
+                            <span>Exceptional Quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('images/croissant-classic.jpg');">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/cheesecake.jpg');">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/coffee-latte.jpg');">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/croissant-almond.jpg');">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/interior-1.jpg');">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/interior-2.jpg');">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="social-feed">
+                <h3>Follow us on Instagram</h3>
+                <a href="https://instagram.com/maricobakes" target="_blank" class="instagram-btn">
+                    <i class="fab fa-instagram"></i>
+                    @maricobakes
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Visit Us</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>P8QX+XGG Marico Bakes And Bites, Mandikhatar, Kathmandu 44600</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Sunday–Saturday: 7:00 AM – 9:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>982-8585123</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <h3>Cuisine</h3>
+                                <p>Artisan Bakery, Specialty Coffee, Fresh Bakes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://instagram.com/maricobakes" target="_blank" class="social-btn instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/MaricoBakesAndBites" target="_blank" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.174711680417!2d85.33258931506191!3d27.708213382791756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1970a6e5c7c1%3A0x27c2d6b1a5c1c1c1!2sMandikhatar%2C%20Kathmandu%2044600%2C%20Nepal!5e0!3m2!1sen!2s!4v1621234567890!5m2!1sen!2s" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Marico Bakes <span>&</span> Bites</h2>
+                    <p>Where Every Bite Tells a Story</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#about">About</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <p class="copyright">
+                    © 2024 Marico Bakes And Bites. All rights reserved.<br>
+                    Made with ❤️ in Kathmandu, Nepal
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
